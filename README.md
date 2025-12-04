@@ -47,4 +47,76 @@ Backend
 -MongoDB + Mongoose
 
 -REST API design
+# 🚀 Setup Instructions
+
+Follow the steps below to run the **Voice Assistant MERN Project** on your local system.
+
+---
+
+## 🧰 1. Prerequisites
+
+Make sure you have the following installed:
+
+- **Node.js** (v16 or above)  
+- **MongoDB** (Local or MongoDB Atlas)  
+- **Git**
+- A modern browser (Chrome recommended — required for SpeechRecognition API)
+
+---
+
+## 📥 2. Clone the Repository
+
+```bash
+
+
+git clone <your-repository-url>
+
+⚙️ BACKEND SETUP
+📌 Step 1 — Navigate to Backend Folder
+cd backend
+
+📌 Step 2 — Install Backend Dependencies
+npm install
+
+Functioning:
+
+Installs all required Node.js libraries listed in package.json, including:
+
+express
+
+mongoose
+
+cors
+
+These packages are required to run the backend API.
+
+📌 Step 3 — Create Backend .env File
+
+Create a file named .env inside the backend folder:
+
+MONGO_URI=your_mongo_connection_string
+PORT=9000
+
+📌 Step 4 — Start Backend Server
+npm run dev
+
+
+Backend will run at:
+
+http://localhost:9000
+
+
+
+FRONTEND SETUP
+1️⃣ Navigate to frontend
+cd ../frontend
+2️⃣ Install frontend dependencies
+npm install
+3️⃣ Create frontend .env
+VITE_BACKEND_URL=http://localhost:9000
+4️⃣ Start frontend development server
+npm run dev
+The frontend runs at:
+
+http://localhost:5173
 
